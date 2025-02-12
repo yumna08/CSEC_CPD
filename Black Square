@@ -1,0 +1,4 @@
+a = list(map(int, input().split()))
+n = input()
+result = sum(a[int(i)-1] for i in n)
+print(result)
