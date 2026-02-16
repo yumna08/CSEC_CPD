@@ -1,9 +1,5 @@
-n,h = map(int,input().split())
-a = list(map(int,input().split()))
-sum = 0
-for i in range(n):
-    if a[i] > h:
-        sum = sum + 2
-    else:
-        sum = sum + 1
-print(sum)
+n, h = map(int, input().split())
+heights = list(map(int, input().split()))
+ 
+twidth = sum(2 if a > h else 1 for a in heights)
+print(twidth)
