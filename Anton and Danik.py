@@ -1,12 +1,9 @@
 n = int(input())
 s = input()
-anton=0
-danik = 0
-for i in range(n):
-    if s[i] == "A":
-        anton = anton+1
-    elif s[i] == "D":
-        danik = danik+1
+
+anton = s.count('A')
+danik = s.count('D')
+
 if anton > danik:
     print("Anton")
 elif danik > anton:
